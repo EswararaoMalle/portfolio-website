@@ -1,0 +1,235 @@
+/* Reset default styles for body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Change font as needed */
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #111; /* Background color */
+    padding: 10px 20px; /* Top/bottom and left/right padding */
+    position: fixed; /* Fixed position for navbar */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar .container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+    max-width: 1400px; /* Max width for the navbar */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Logo styling */
+.logo {
+    color: #FFA500; /* Logo color */
+    font-size: 24px; /* Font size */
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 100px; /* Space between links */
+}
+
+.nav-links a {
+    color: #FFA500; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+    color: #ff7f00; /* Change color on hover */
+}
+/* Hero Section Styling */
+
+.hero {
+    height: 100vh;
+    background: /* Gradient with some transparency */
+                url('background.jpg'); /* Replace with the correct image path */
+    background-size: cover, cover; /* Ensure both gradient and image cover the area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center, right center; /* Center gradient and position image to the right */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: left; /* Aligns content to the left */
+    text-align: center; /* Center text */
+    color: #fff; /* Text color */
+    padding: 0 2rem; /* Padding for spacing */
+}
+.hero-content {
+    max-width: 600px;
+}
+
+
+.cta-button {
+    background-color: #FFA500;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    
+}
+
+.cta-button:hover {
+    background-color: #ff7f00;
+}
+
+/* About Section */
+.about-section {
+    padding: 10px 20px 50px;
+    background: #222;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #FFA500;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    background: #111;
+    text-align: center;
+}
+
+.projects-section h2 {
+    color: #FFA500;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: orange;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: orangered;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: green;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background: #222;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #FFA500;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background: #FFA500;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #ff7f00;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    color: #999;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #FFA500;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff7f00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-cards {
+        flex-direction: column;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
